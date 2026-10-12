@@ -2,122 +2,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Duiwin Prediction</title>
+  <title>Duiwin Prediction</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
-};
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','1804601747525944');
-fbq('track','PageView');
-</script>
-<!-- End Meta Pixel Code -->
+    fbq('init','1804601747525944');
+    fbq('track','PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 
+  <style>
+    .join.whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      cursor: pointer;
+
+      animation: tapTap 1.2s ease-in-out infinite;
+      transform-origin: center;
+      will-change: transform, box-shadow;
+    }
+
+    @keyframes tapTap {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+      }
+
+      12% {
+        transform: scale(0.94);
+      }
+
+      24% {
+        transform: scale(1.06);
+        box-shadow: 0 0 0 8px rgba(37, 211, 102, 0.12);
+      }
+
+      36% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+
+      48% {
+        transform: scale(0.96);
+      }
+
+      60% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 6px rgba(37, 211, 102, 0.10);
+      }
+
+      72% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .join.whatsapp:hover {
+      animation-play-state: paused;
+      transform: scale(1.06);
+    }
+
+    .join.whatsapp:active {
+      transform: scale(0.94);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .join.whatsapp {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1804601747525944&ev=PageView&noscript=1"
-alt="">
-</noscript>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1804601747525944&ev=PageView&noscript=1"
+      alt="">
+  </noscript>
 
-<div class="bg"></div>
+  <div class="bg"></div>
 
-<section class="hero">
-<div class="glass">
+  <section class="hero">
+    <div class="glass">
 
-<div class="logo"></div>
+      <div class="logo"></div>
 
-<h3>Duiwin Prediction</h3>
+      <h3>Duiwin Prediction</h3>
 
-<h1>
-Duiwin Prediction <br>
-& Premium Telegram Updates
-</h1>
+      <h1>
+        Duiwin Prediction
+        <br>
+        & Premium Telegram Updates
+      </h1>
 
-<p>
-Join our community for gaming insights, daily strategies,
-and updates.
-</p>
+      <p>
+        Join thousands of gamers receiving exclusive gaming
+        insights, daily strategies, and Telegram updates.
+      </p>
 
-<ul>
-<li>✔ Daily Gaming Tips</li>
-<li>✔ VIP Strategies</li>
-<li>✔ Instant Updates</li>
-</ul>
+      <ul>
+        <li>✔ Daily Gaming Tips</li>
+        <li>✔ VIP Strategies</li>
+        <li>✔ Instant Updates</li>
+      </ul>
 
-<div class="buttons">
+      <div class="buttons">
+        <a
+          class="join whatsapp"
+          id="whatsappBtn"
+          href="https://wa.me/917374916894?text=LOSS%20COVER"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Join on WhatsApp"
+        >
+          💬 JOIN ON WHATSAPP ➜
+        </a>
+      </div>
 
-<!-- WHATSAPP BUTTON -->
-<a
-  class="join whatsapp"
-  id="whatsappBtn"
-  href="https://wa.me/917374916894?text=LOSS%20COVER"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  💬 JOIN ON WHATSAPP ➜
-</a>
+      <div class="stats">
+        <div>
+          <h2>98K+</h2>
+          <span>Members</span>
+        </div>
 
-</div>
+        <div>
+          <h2>1000+</h2>
+          <span>Daily Tips</span>
+        </div>
 
-<div class="stats">
-<div>
-<h2>98K+</h2>
-<span>Members</span>
-</div>
+        <div>
+          <h2>24/7</h2>
+          <span>Updates</span>
+        </div>
+      </div>
 
-<div>
-<h2>1000+</h2>
-<span>Daily Tips</span>
-</div>
+    </div>
+  </section>
 
-<div>
-<h2>24/7</h2>
-<span>Updates</span>
-</div>
-</div>
+  <script src="script.js"></script>
 
-</div>
-</section>
+  <script>
+    const whatsappBtn = document.getElementById('whatsappBtn');
 
-<script src="script.js"></script>
-
-<!-- WhatsApp Button Click Tracking -->
-<script>
-document.getElementById('whatsappBtn').addEventListener('click',function(){
-  if(typeof window.fbq === 'function'){
-    window.fbq('track','Contact',{
-      content_name:'Duiwin WhatsApp Button'
+    whatsappBtn.addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact', {
+          content_name: 'Duiwin WhatsApp Button'
+        });
+      }
     });
-  }
-});
-</script>
+  </script>
 
 </body>
 </html>
